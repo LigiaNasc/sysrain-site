@@ -78,10 +78,31 @@
     <div class="container">
       <h2>Seja um dos primeiros a testar a SYSRain</h2>
       <p>Cadastre-se e receba uma demonstração exclusiva da nossa solução de irrigação inteligente e eficiente.</p>
-      
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSffoIQE1S4Yex3bVayVtMGpGRlQVCf_pka5a1y2tUM4wJipaA/viewform?embedded=true"
-        width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
 
+      <form id="sysrain-form">
+        <input type="text" name="entry.1772260409" placeholder="Nome completo" required />
+        <input type="email" name="entry.311616826" placeholder="Email" required />
+        <input type="text" name="entry.2028141425" placeholder="Cidade" required />
+
+        <label for="tipo-irrigacao">Você precisa de irrigação para:</label>
+        <select name="entry.290819281" id="tipo-irrigacao" required>
+          <option value="Jardim/Quintal">Jardim/Quintal</option>
+          <option value="Fazenda/Plantação">Fazenda/Plantação</option>
+        </select>
+
+        <input type="text" name="entry.179990010" placeholder="WhatsApp (opcional)" />
+
+        <label>
+          <input type="checkbox" required />
+          Aceito receber comunicações e ofertas da SYSRain.
+        </label>
+
+        <button type="submit">Quero Testar Agora</button>
+
+        <p id="mensagem-envio" style="display:none; color: green; margin-top: 10px;">
+          Suas informações foram enviadas com sucesso!
+        </p>
+      </form>
     </div>
   </section>
 
@@ -90,5 +111,7 @@
       <p>© 2025 SYSRain. Tecnologia brasileira para um futuro mais verde e sustentável.</p>
     </div>
   </footer>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="js/form-handler.js"></script>
 </body>
 </html>
